@@ -10,8 +10,9 @@ Error: Undefined variable: "$grid-columns".
 13: @for $i from 1 through $grid-columns {
 14:    .column-#{$i} {
 15:      width: 100% / $grid-columns * $i;
-16:    }
-17: }
+16: 
+17:    }
+18: }
 
 Backtrace:
 sass/layout/grid.scss:13
@@ -57,4 +58,4 @@ sass/layout/grid.scss:13
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grid-columns\".\A         on line 13 of sass/layout/grid.scss\A \A 8:     width: auto;\A 9:     max-width: 100%;\A 10:     height: auto !important;\A 11: }\A 12: \A 13: @for $i from 1 through $grid-columns {\A 14:    .column-#{$i} {\A 15:      width: 100% / $grid-columns * $i;\A 16:    }\A 17: }"; }
+  content: "Error: Undefined variable: \"$grid-columns\".\A         on line 13 of sass/layout/grid.scss\A \A 8:     width: auto;\A 9:     max-width: 100%;\A 10:     height: auto !important;\A 11: }\A 12: \A 13: @for $i from 1 through $grid-columns {\A 14:    .column-#{$i} {\A 15:      width: 100% / $grid-columns * $i;\A 16: \A 17:    }\A 18: }"; }

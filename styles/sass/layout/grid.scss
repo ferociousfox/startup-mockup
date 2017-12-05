@@ -13,5 +13,11 @@ img {
 @for $i from 1 through $grid-columns {
    .column-#{$i} {
      width: 100% / $grid-columns * $i;
+
    }
+}
+
+.stats-mofo {
+  padding: 90px 0;
+  overflow: auto;
 }

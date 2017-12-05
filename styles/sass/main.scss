@@ -37,10 +37,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 110px 0;
+  padding: 0;
   & h1, p {
     text-align: center;
     padding: 0 90px;
+  }
+  & .hero-text {
+    padding: 8.5em 0;
   }
 }
 .grey-background {
@@ -57,6 +60,10 @@
   margin-top: 100px;
   margin-left: -15px;
   margin-right: -15px;
+  display: flex;
+  & .card {
+    display: flex;
+  }
 }
 
 .card-content {
@@ -65,5 +72,11 @@
   text-align: center;
   & p {
     font-weight: 300;
+  }
+}
+.number{
+  & h1{
+    font-size: 4em;
+    margin: -15px;
   }
 }

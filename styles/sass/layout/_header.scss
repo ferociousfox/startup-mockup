@@ -2,7 +2,24 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
  .nav {
-   background-color: lightgreen;
    min-height: 50px;
-   margin-top: -119px;
+   padding-left: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   & .nav-search {
+     border-radius: 38px;
+     border: 1.5px solid white;
+     background: none;
+     height: 38px;
+     padding: 18px;
+     color: white;
+     vertical-align: middle;
+   }
+   & img {
+     display: inline-flex;
+     align-items: center;
+     vertical-align: middle;
+   }
  }
