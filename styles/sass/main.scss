@@ -37,5 +37,33 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 110px 0;
+  & h1, p {
+    text-align: center;
+    padding: 0 90px;
+  }
+}
+.grey-background {
+  padding: 90px 0;
+  & h2 {
+    text-align: center;
+  }
+  & p {
+    margin-top: 0;
+    text-align: center;
+  }
+}
+.card-row {
+  margin-top: 100px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
 
+.card-content {
+  background-color: $hero-text-color;
+  padding: 25px;
+  text-align: center;
+  & p {
+    font-weight: 300;
+  }
 }
