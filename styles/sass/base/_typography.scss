@@ -1,0 +1,23 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 125% / 1.4 $text-font-stack;
+}
+
+$colors: (
+  'green': $green-main,
+  'dark-grey': $dark-grey,
+  'hero-text': $hero-text-color,
+  'dark-green': $green-dark
+);
+
+@each $color, $hex in $colors{
+  .text-#{$color}{
+    color: $hex;
+  }
+  .background-#{$color}{
+    background-color: $hex;
+  }
+}

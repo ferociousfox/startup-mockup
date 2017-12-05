@@ -1,0 +1,17 @@
+[class*='column-'] {
+    float: left;
+    padding: 1em;
+    min-height: 1px;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+}
+
+@for $i from 1 through $grid-columns {
+   .column-#{$i} {
+     width: 100% / $grid-columns * $i;
+   }
+}
